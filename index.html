@@ -5,73 +5,81 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="media1">
-<header class="main-header">
-    <h1 class="header-text">HBT</h1>
-<ul class="icon-mob">
-    <li class="icon"><a href="#">
-    <i class="fas fa-align-justify"></i></a>
-    <ul class="header-ul">
-        <li class="menu home" ><a href="#">Home</a></li>
-        <li class="menu"><a href="#">About</a></li>
-        <li class="menu"><a href="#">Contact</a></li>
-        </li>
-    </ul>
-</ul>
-</header>
+<div class="wrapper">
+    <header class="main-header">
+        <h1 class="header-text">HBT</h1>
+        <div class="menu-group" onclick="menuClick()">
+            <i class="fas fa-align-justify omar"></i>
+            <ul id="header-ul" class="header-ul">
+                <li class="menu home"><a href="#">Home</a></li>
+                <li class="menu"><a href="#">About</a></li>
+                <li class="menu"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
 
-<div class="enjoy-your-star">
-    <h1 class="title-text">
-        <enjoy class="enjoy"> Enjoy</enjoy>
-        Your Stay
-    </h1>
-    <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua.</p>
-    <li class="about-our-hotel"><a href="#">About Our Hotel</a></li>
+    <div class="enjoy-your-star">
+        <h1 class="title-text">
+            <enjoy class="enjoy"> Enjoy</enjoy>
+            Your Stay
+        </h1>
+        <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore
+            et dolore magna aliqua.</p>
+        <li class="about-our-hotel"><a href="#">About Our Hotel</a></li>
+    </div>
+    <img class="photo1" src="design/photo-1.jpg" alt="Photo-house">
+
+    <div class="the-history-our-hotel">
+        <h1 class="the-history-of-our-hotel-title">
+            <The-history class="the-history">The History</The-history>
+            Of Our Hotel
+        </h1>
+        <p class="text-the-history-of-hotel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur</p>
+        <li class="read-more"><a href="#"> Read more </a></li>
+    </div>
+
+
+    <div class="places">
+        <div class="list">
+            <a href="#">
+                <i class="fas fa-hotel hold"></i>
+                <h1>Great Location</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna aliqua</p>
+            </a>
+        </div>
+        <div class="list middle">
+            <a href="#">
+                <i class="fas fa-utensils hold"></i>
+                <h1>Free Meals</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna aliqua</p>
+            </a>
+        </div>
+        <div class="list">
+            <a href="#">
+                <i class="fas fa-dumbbell hold"></i>
+                <h1>Fitness Room</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna aliqua</p>
+            </a>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <p>Hotel BT &copy; 2019, All Rights Reserved</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/22c255c05c.js" crossorigin="anonymous"></script>
 </div>
-<img class="photo1" src="design/photo-1.jpg" alt="Photo-house">
-
-<div class="the-history-our-hotel">
-    <h1 class="the-history-of-our-hotel-title">
-        <The-history class="the-history">The History</The-history>
-        Of Our Hotel
-    </h1>
-    <p class="text-the-history-of-hotel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur</p>
-    <li class="read-more"><a href="#"> Read more </a></li>
-</div>
-
-
-
-<div class="places">
-    <ul>
-        <li class="list"><a href="#">
-            <i class="fas fa-hotel hold"></i>
-            <h1>Great Location</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua</p>
-        </a></li>
-        <li class="list middle"><a href="#">
-            <i class="fas fa-utensils hold"></i>
-            <h1>Free Meals</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua</p>
-        </a></li>
-        <li class="list"><a href="#">
-            <i class="fas fa-dumbbell hold"></i>
-            <h1>Fitness Room</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua</p>
-        </a></li>
-    </ul>
-</div>
-
-<footer class="main-footer">
-    <p>Hotel BT &copy; 2019, All Rights Reserved</p>
-</footer>
-<script src="https://kit.fontawesome.com/22c255c05c.js" crossorigin="anonymous"></script>
-</div>
+<script src="script.js"></script>
 </body>
 </html>

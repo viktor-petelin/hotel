@@ -1,5 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
+
+.clear {
+    clear: both;
+}
 
 body {
     margin: 0;
@@ -8,25 +11,10 @@ body {
     line-height: 25px;
 }
 
-.media1{
+
+.wrapper {
     width: 100%;
-    height: 100%;
-}
-
-@media only screen and (max-width: 992px){
-    .media1{
-    width:750px;}
-  .header-ul li{
-      display:none ;
-  }
-  .icon-mob li:hover{
-      display:block;
-  }
-}
-
-@media only screen and (max-width: 760px){
-    .media1{
-    width:450px;}
+    min-height: 100%;
 }
 
 .menu {
@@ -43,7 +31,7 @@ body {
     flex-direction: row;
 }
 
-.icon{
+.menu-group {
     list-style-type: none;
     height: 100%;
     padding: 0;
@@ -52,18 +40,8 @@ body {
     margin-block-end: 0;
 }
 
-.fa-align-justify{
-    display:none;
-}
-
-
-.icon-mob{
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
+.omar {
+    display: none !important;
 }
 
 .header-ul {
@@ -115,7 +93,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 
 .title-text {
@@ -195,33 +173,23 @@ body {
 
 .places {
     width: 100%;
-    height: 275px;
     color: white;
     background-color: #f4f4f4;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     margin: 0;
     padding: 0;
 }
 
-.places ul{
-    width:100%;
-    display: inline-flex;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start: 0;
-}
-
 .list {
-    width: 33%;
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    height: 100%;
+    height: 275px;
     color: #333333;
     text-align: center;
 }
 
-.list a{
+.list a {
     text-decoration: none;
     color: inherit;
 }
@@ -231,7 +199,7 @@ body {
     color: #444;
 }
 
-.main-footer{
+.main-footer {
     color: #f4f4f4;
     background-color: #444444;
     height: 45px;
@@ -242,19 +210,217 @@ body {
     font-size: 12px;
 }
 
-.places p{
+.places p {
     padding: 0 50px;
 }
 
-.hold{
+.hold {
     font-size: 3rem;
 
 }
 
-.places h1{
+.places h1 {
     font-size: 20px;
     padding-bottom: 5px;
+}
 
+@media (max-width: 850px) {
+    body {
+        line-height: 17px;
+    }
+
+    .omar {
+        display: flex !important;
+        padding-top: 11px;
+        font-size: 1.5em;
+    }
+
+    .header-ul {
+        display: none;
+        position: absolute;
+        top: 3em;
+        right: 0;
+    }
+
+    .menu-group {
+        position: relative;
+    }
+
+    .menu {
+        display: block;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100%;
+        color: white;
+    }
+
+    .main-header {
+        width: 100%;
+        height: 47px;
+        color: white;
+        background-color: #333333;
+    }
+
+    .header-text {
+        margin: 0;
+        width: 75%;
+        padding: 15px 0 0 80px;
+        font-size: 28px;
+    }
+
+    .enjoy-your-star {
+        width: 100%;
+        height: 400px;
+        background: url('../design/showcase.jpg') no-repeat;
+        background-size: cover;
+        text-align: center;
+        justify-content: center;
+        font-size: 66%
+    }
+
+    .title-text {
+        line-height: 36px;
+        font-size: 30px;
+        color: white;
+    }
+
+    .enjoy {
+        color: #f7c08a;
+    }
+
+    .intro {
+        margin-top: -10px;
+        padding-bottom: 10px;
+        color: white;
+    }
+
+    .enjoy-your-star a {
+        text-decoration: none;
+        text-align: center;
+        padding: 8px;
+        background: #333333;
+        color: white;
+    }
+
+    .enjoy-your-star li {
+        list-style-type: none;
+    }
+
+    .enjoy-your-star a:hover {
+        padding: 8px;
+        background: #333;
+        color: white;
+    }
+
+    .about-our-hotel {
+        font-size: 100%;
+    }
+
+    .list a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .list:hover, .middle {
+        background: #f7c08a;
+        color: #444;
+    }
+
+    .places {
+        flex-direction: column;
+    }
+
+    .places p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .places h1 {
+        font-size: 13px;
+        padding-bottom: 0;
+
+    }
+
+    .hold {
+        font-size: 32px;
+    }
+
+    .the-history-our-hotel {
+        display: block;
+        color: white;
+        height: 233px;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+    }
+
+    .the-history-of-our-hotel-title {
+        padding-top: 25px;
+    }
+
+    .text-the-history-of-hotel {
+        padding: 0 25px 20px 25px;
+    }
+
+    .the-history-our-hotel a {
+        text-decoration: none;
+        text-align: center;
+        padding: 12px;
+        background: #f4f4f4;
+        color: #33336b;
+    }
+
+    .the-history-our-hotel li {
+        list-style-type: none;
+    }
+
+    .the-history {
+        color: #f7c08a;
+    }
+
+    .photo1 {
+        display: block;
+        width: 100%;
+        height: 233px;
+    }
+
+    .main-footer {
+        color: #f4f4f4;
+        background-color: #444444;
+        height: 45px;
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        /*width: 450px;*/
+    }
+
+    .omar {
+        display: flex !important;
+    }
+
+    .header-ul {
+        display: none;
+    }
+
+    .menu-group:hover > ul {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100%;
+        color: white;
+    }
 }
 
 
