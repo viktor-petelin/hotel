@@ -132,7 +132,7 @@ body {
 
 .the-history-our-hotel {
     color: white;
-    height: 350px;
+    height: 370px;
     width: 50%;
     float: right;
     background-color: #333;
@@ -167,7 +167,7 @@ body {
 
 .photo1 {
     width: 50%;
-    height: 350px;
+    height: 370px;
     float: left;
 }
 
@@ -184,7 +184,7 @@ body {
 .list {
     display: flex;
     align-items: center;
-    height: 275px;
+    height: 300px;
     color: #333333;
     text-align: center;
 }
@@ -224,15 +224,37 @@ body {
     padding-bottom: 5px;
 }
 
-@media (max-width: 850px) {
-    body {
-        line-height: 17px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+    .main-header {
+        height: 45px;
     }
 
     .omar {
         display: flex !important;
-        padding-top: 11px;
-        font-size: 1.5em;
+        font-size: 2rem;
+        padding-right: 15px;
+        padding-top: 5px;
+    }
+
+    .header-text {
+        width: 80%;
+        padding: 9px 0 0 70px;
     }
 
     .header-ul {
@@ -248,25 +270,14 @@ body {
 
     .menu {
         display: block;
-        align-items: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 100%;
-        color: white;
+        text-align: center;
+       padding-top: 20px;
+        height: 50px;
+       background-color: #444;
     }
 
-    .main-header {
-        width: 100%;
-        height: 47px;
-        color: white;
-        background-color: #333333;
-    }
-
-    .header-text {
-        margin: 0;
-        width: 75%;
-        padding: 15px 0 0 80px;
-        font-size: 28px;
+    .header-ul li{
+        margin-bottom: 10px;
     }
 
     .enjoy-your-star {
@@ -276,56 +287,13 @@ body {
         background-size: cover;
         text-align: center;
         justify-content: center;
-        font-size: 66%
     }
 
-    .title-text {
-        line-height: 36px;
-        font-size: 30px;
-        color: white;
-    }
-
-    .enjoy {
-        color: #f7c08a;
-    }
-
-    .intro {
-        margin-top: -10px;
-        padding-bottom: 10px;
-        color: white;
-    }
-
-    .enjoy-your-star a {
-        text-decoration: none;
-        text-align: center;
-        padding: 8px;
-        background: #333333;
-        color: white;
-    }
-
-    .enjoy-your-star li {
-        list-style-type: none;
-    }
-
-    .enjoy-your-star a:hover {
-        padding: 8px;
-        background: #333;
-        color: white;
-    }
-
-    .about-our-hotel {
-        font-size: 100%;
-    }
 
     .list a {
         display: block;
         text-decoration: none;
         color: inherit;
-    }
-
-    .list:hover, .middle {
-        background: #f7c08a;
-        color: #444;
     }
 
     .places {
@@ -337,90 +305,70 @@ body {
         margin: 0;
     }
 
-    .places h1 {
-        font-size: 13px;
-        padding-bottom: 0;
-
-    }
-
-    .hold {
-        font-size: 32px;
-    }
-
     .the-history-our-hotel {
-        display: block;
-        color: white;
-        height: 233px;
+        height: 350px;
         width: 100%;
         background-color: #333;
         text-align: center;
-    }
-
-    .the-history-of-our-hotel-title {
-        padding-top: 25px;
+        display: block;
     }
 
     .text-the-history-of-hotel {
         padding: 0 25px 20px 25px;
     }
 
-    .the-history-our-hotel a {
-        text-decoration: none;
-        text-align: center;
-        padding: 12px;
-        background: #f4f4f4;
-        color: #33336b;
-    }
-
-    .the-history-our-hotel li {
-        list-style-type: none;
-    }
-
-    .the-history {
-        color: #f7c08a;
-    }
-
     .photo1 {
-        display: block;
         width: 100%;
-        height: 233px;
+        height: 350px;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
     .main-footer {
-        color: #f4f4f4;
-        background-color: #444444;
-        height: 45px;
+        height: 35px;
         width: 100%;
         text-align: center;
-        font-size: 12px;
+        display: block;
+        font-size: 14px;
     }
+
+    .main-footer p{
+        padding-top: 5px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 500px) {
-    .wrapper {
-        /*width: 450px;*/
+
+    .the-history-our-hotel {
+        height: 400px;
     }
 
-    .omar {
-        display: flex !important;
+    .header-text {
+        width: 80%;
+        padding: 9px 0 0 35px;
+    }
+    .main-footer {
+        font-size: 15px;
     }
 
-    .header-ul {
-        display: none;
+    .main-footer p{
+        padding-top: 5px;
     }
 
-    .menu-group:hover > ul {
-        display: block;
-    }
-
-    .menu {
-        display: block;
-        align-items: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 100%;
-        color: white;
-    }
 }
 
 
